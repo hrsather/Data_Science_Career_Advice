@@ -1,0 +1,94 @@
+Tensor Flow
+Python
+SQL
+Java
+SAS
+Hive
+Mat Lab
+Ruby
+Tableau
+Py Torch
+Rapid Miner
+SAS
+Apache
+Spark
+D3.js
+Excel
+ggplot
+Jupyter
+Mat plot lib
+NLTK
+Numpy
+Pandas
+Keras
+Bachelor
+Master
+Statistics
+Azure
+Perl
+Hadoop
+Kaggle
+Business
+Data Robot
+Knime
+AWS
+Cloud
+Data base
+Kubernetes
+Nvidia
+Watson
+Robot
+Artificial Intelligence
+XGBoost
+Julia
+Theano
+Caffe
+Bigquery
+Julia
+Scala
+Linux
+Unix
+Java Script
+C+
+C#
+Knime
+PHP
+Go
+Swift
+Rust
+Machine Learning
+Deep Learning
+Anaconda
+Power Point
+Sales Force
+SSIS
+Health Care
+Interpersonal
+Communication
+English
+Finance
+Accounting
+Math
+Physics
+Engineering
+Word
+SaaS
+Six Sigma
+Agile
+Scrum
+Computer Science
+MBA
+NetSuite
+Modeling
+QL
+PMI
+IIBA
+SAP
+JIRA
+TSDS
+Security
+Network
+Testing
+Clearance
+CFE
+Associate
