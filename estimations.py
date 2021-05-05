@@ -48,12 +48,13 @@ def get_state_cols(X):
     return state_cols
 
 
-def get_non_state_cols(X):
-    state_cols = []
-    for col_name in X.columns:
-        if col_name[:5] != "State":
-            state_cols.append(col_name)
-    return state_cols
+def get_absent_quals(X, candidate_row):
+    absent_quals = []
+    for i in range(len(X.columns)):
+        col_name = X.columns[i]
+        if col_name[:5] != "State" and candidate_row[i] == False:
+            absent_quals.append(col_name)
+    return absent_quals
 
 
 def set_cols_to_false(X, state_cols, candidate_row):
@@ -105,20 +106,20 @@ def state_effects(X, regr, starting_salary, top=True):
 
     state_list, salary_list = sort_vals(state_list, salary_list, top=top)
     plt.bar(state_list, salary_list)
-    plt.title("Expected salary in different states")
+    plt.title("Expected Salary Increase in Different States")
     plt.xlabel("States")
     plt.ylabel("Salary")
     plt.show()
 
 
 def qualifications_effects(X, regr, starting_salary, top=True):
-    non_state_cols = get_non_state_cols(X)
     candidate_row = get_candidate_row(X, 5000)
+    absent_quals = get_absent_quals(X, candidate_row)
     qual_list = []
     salary_list = []
     # Iterate through each different qualification
-    for qual_name in non_state_cols:
-        set_cols_to_false(X, non_state_cols, candidate_row)
+    for qual_name in absent_quals:
+        set_cols_to_false(X, absent_quals, candidate_row)
         set_col_to_true(qual_name, X, candidate_row)
         salary = predict_salary(regr, candidate_row)
         salary_list.append(salary - starting_salary)
@@ -126,7 +127,7 @@ def qualifications_effects(X, regr, starting_salary, top=True):
 
     qual_list, salary_list = sort_vals(qual_list, salary_list, top=top)
     plt.bar(qual_list, salary_list)
-    plt.title("Expected salary with different qualfifications")
+    plt.title("Expected salary increase with different qualfifications")
     plt.xlabel("Qualifications")
     plt.xticks(rotation=90)
     plt.ylabel("Salary")

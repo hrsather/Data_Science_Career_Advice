@@ -1,2 +1,16 @@
 State_CO
+Tensor Flow
+Python
+SQL
+Java
+Py Torch
+Excel
+ggplot
+Jupyter
+Mat plot lib
+Numpy
+Pandas
+Keras
 Bachelor
+Master
+Statistics

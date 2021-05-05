@@ -64,7 +64,6 @@ Sales Force
 SSIS
 Health Care
 Interpersonal
-Communication
 English
 Finance
 Accounting
@@ -80,7 +79,6 @@ Computer Science
 MBA
 NetSuite
 Modeling
-QL
 PMI
 IIBA
 SAP
